@@ -33,22 +33,29 @@ document.getElementById('calculateBtn').addEventListener('click', function() {
             break;
     }
 
-    let message = '';
-
     // Adjust calories based on goal
     switch (goal) {
-        case 'lose':
-            calories -= 250;  // 0.25 kg weight loss per week
-            message = '*for a loss of 0.25kg per week';
+        case 'lose_0.25':
+            calories -= 250;
             break;
-        case 'gain':
-            calories += 250;  // 0.25 kg weight gain per week
-            message = '*for a gain of 0.25kg per week';
+        case 'lose_0.5':
+            calories -= 500;
+            break;
+        case 'lose_1':
+            calories -= 1000;
+            break;
+        case 'gain_0.25':
+            calories += 250;
+            break;
+        case 'gain_0.5':
+            calories += 500;
+            break;
+        case 'gain_1':
+            calories += 1000;
             break;
     }
 
     document.getElementById('result').innerText = `Your daily calorie requirement is ${calories.toFixed(0)} calories.`;
-    document.getElementById('message').innerText = message;
 });
 
 
