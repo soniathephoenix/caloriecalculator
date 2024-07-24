@@ -41,7 +41,8 @@ input, select {
 button {
     padding: 10px 15px;
     background-color: #A5BE00;
-    color: #064789;
+    color: #EBF2FA;
+    text-shadow: 2px 2px 4px rgba(0.3, 0.3, 0.3, 0.3);
     border: 1px solid #679436;
     border-radius: 5px;
     cursor: pointer;
